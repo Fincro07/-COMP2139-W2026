@@ -1,0 +1,12 @@
+@model COMP2139_ICE.Models.Project
+@{ ViewData["Title"] = "Project Details"; }
+<h2>Project Details</h2>
+<div class="card p-3">
+    <h4>@Model.Name</h4>
+    <p>@Model.Description</p>
+    <p><strong>Project ID</strong> @Model.ProjectId</p>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.ProjectId" class="btn btn-primary">Edit</a>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>
